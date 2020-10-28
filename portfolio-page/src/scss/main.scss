@@ -1,5 +1,6 @@
-@import url("./settings/_colors.scss");
-@import url("./settings/_fonts.scss");
+@import "./settings/_colors.scss";
+@import "./settings/_fonts.scss";
+@import "normalize.css";
 
 body {
   font-family: $font-base;
