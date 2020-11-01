@@ -1,0 +1,17 @@
+.header--nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2px;
+  padding: 2px;
+
+  li {
+    display: block;
+    list-style: none;
+    width: 90px;
+    height: 36px;
+
+    :hover {
+      border: 0.75px solid #fad648;
+    }
+  }
+}
