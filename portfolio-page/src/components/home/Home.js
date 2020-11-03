@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Link } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 // uzyc scroll linka zeby przemieszal po stronie
 // poczytac se dokumentacje z react scroll
 //react-device-detect
@@ -19,6 +19,8 @@ const Home = () => {
     <Router>
       <Header />
       <Start />
+      <HowItWorks />
+      <About />
       <Route path="/start" component={Start} />
       <Route path="/howItWorks" component={HowItWorks} />
       <Route path="/about" component={About} />

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import style from "../header/Header.scss";
+import "../header/Header.scss";
 
 function Header() {
   return (
