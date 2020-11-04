@@ -1,3 +1,67 @@
 .gray {
   display: flex;
 }
+
+.howitworks--header {
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.decoration {
+  margin: 20px auto;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f1f1 0% 0% no-repeat padding-box;
+  padding: 40px 0 40px 0;
+}
+
+.icon--holder {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../../assets/Icon.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+article:nth-child(2) > .icon--holder {
+  background-image: url("../../assets/Icon2.png");
+}
+
+article:nth-child(3) > .icon--holder {
+  background-image: url("../../assets/Icon3.png");
+}
+
+article:nth-child(4) > .icon--holder {
+  background-image: url("../../assets/Icon4.png");
+}
+
+.howitworks--article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px 20px 150px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.simple--decoration {
+  display: block;
+  height: 1px;
+  width: 50px;
+  background-color: #707070;
+  margin: 10px 0;
+}
+
+.howitworks--smallHeader {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}

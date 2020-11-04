@@ -1,4 +1,5 @@
 import React from "react";
+import "../home/home.scss";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 // uzyc scroll linka zeby przemieszal po stronie
 // poczytac se dokumentacje z react scroll
@@ -16,19 +17,21 @@ import Header from "../header/Header";
 
 const Home = () => {
   return (
-    <Router>
-      <Header />
-      <Start />
-      <HowItWorks />
-      <About />
-      <Route path="/start" component={Start} />
-      <Route path="/howItWorks" component={HowItWorks} />
-      <Route path="/about" component={About} />
-      <Route path="/whoWorks" component={WhoWorks} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/logScreen" component={LogScreen} />
-      <Route path="/SignScreen" component={SignScreen} />
-    </Router>
+    <div className="wrapper">
+      <Router>
+        <Header />
+        <Start />
+        <HowItWorks />
+        <About />
+        <Route path="/start" component={Start} />
+        <Route path="/howItWorks" component={HowItWorks} />
+        <Route path="/about" component={About} />
+        <Route path="/whoWorks" component={WhoWorks} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/logScreen" component={LogScreen} />
+        <Route path="/SignScreen" component={SignScreen} />
+      </Router>
+    </div>
   );
 };
 

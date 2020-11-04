@@ -6,10 +6,9 @@
 
 .start--pic {
   display: block;
-  background-image: url("../../assets/Hero Image.png");
   background-position: center;
   width: 50%;
-  height: 963px;
+  height: calc(100vh - 110px);
 }
 .start--holder {
   text-align: center;
@@ -28,6 +27,7 @@
 
 .decoration {
   display: block;
+  margin-top: 30px;
   margin-bottom: 40px;
   width: 253px;
   height: 33px;
@@ -41,4 +41,34 @@
   background-color: transparent;
   margin: 10px;
   font-size: 1.2em;
+}
+
+.start--article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.bigNumber {
+  font-size: 80px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.bigText {
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.start--text {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+}
+
+.triple--collumns {
+  background-image: url("../../assets/3\ Columns\ Background.png");
 }
