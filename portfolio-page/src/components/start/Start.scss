@@ -1,4 +1,5 @@
 @import "../../scss/settings/fonts";
+@import "../../scss/settings/colors";
 
 .start--section {
   display: flex;
@@ -37,7 +38,7 @@
 .btn {
   width: 270px;
   height: 120px;
-  border: 0.75px solid #3c3c3c;
+  border: 0.75px solid $dark-gray;
   background-color: transparent;
   margin: 10px;
   font-size: 1.2em;

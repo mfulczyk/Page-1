@@ -1,7 +1,8 @@
-@import "./settings/_colors.scss";
+@import "./settings/colors";
 @import "./settings/_fonts.scss";
 @import "normalize.css";
 
 body {
   font-family: $font-base;
+  color: $dark-gray;
 }

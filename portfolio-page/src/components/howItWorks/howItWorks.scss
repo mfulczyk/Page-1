@@ -1,3 +1,5 @@
+@import "../../scss/settings/_colors.scss";
+
 .gray {
   display: flex;
 }
@@ -17,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f0f1f1 0% 0% no-repeat padding-box;
+  background: $super-light-gray 0% 0% no-repeat padding-box;
   padding: 40px 0 40px 0;
 }
 
@@ -56,7 +58,7 @@ article:nth-child(4) > .icon--holder {
   display: block;
   height: 1px;
   width: 50px;
-  background-color: #707070;
+  background-color: $different-gray;
   margin: 10px 0;
 }
 
@@ -64,4 +66,15 @@ article:nth-child(4) > .icon--holder {
   font-weight: 300;
   font-size: 20px;
   margin: 10px 0 10px 0;
+}
+
+.howitworks--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.howitworks--btn {
+  font-size: 1.6em;
 }

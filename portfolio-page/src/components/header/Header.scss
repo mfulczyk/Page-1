@@ -1,3 +1,5 @@
+@import "../../../src/scss/settings/colors";
+
 .header--nav {
   display: flex;
   justify-content: flex-end;
@@ -13,7 +15,7 @@
     height: 45px;
 
     &:hover {
-      border: 0.75px solid #fad648;
+      border: 0.75px solid $yellow;
     }
   }
 }
