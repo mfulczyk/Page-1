@@ -1,0 +1,63 @@
+@import "../../scss/settings/colors";
+
+.whoworks--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.whoworks--header {
+  align-self: center;
+  margin-top: 2.2em;
+}
+
+.whoworks-holder {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.whoworks-btn {
+  height: 90px;
+}
+
+.whoworks-text {
+  margin: 10px 35% 10px 35%;
+}
+
+.gray--line {
+  margin-top: 15px;
+  display: block;
+  background-color: $different-gray;
+  height: 1px;
+  width: 100%;
+}
+
+ul:last-child {
+  .gray--line {
+    display: none;
+  }
+}
+
+.ul--holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whoWorks--ul {
+  width: 80%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  transition: 3s;
+}
+
+.whoworks--name {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.whoworks--what {
+  align-self: flex-end;
+}

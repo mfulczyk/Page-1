@@ -14,6 +14,7 @@ import Contact from "../contact/Contact";
 import SignScreen from "../signScreen/SignScreen";
 import LogScreen from "../logScreen/LogScreen";
 import Header from "../header/Header";
+import FinalForm from "../finalForm/FinalForm";
 
 const Home = () => {
   return (
@@ -23,6 +24,8 @@ const Home = () => {
         <Start />
         <HowItWorks />
         <About />
+        <WhoWorks />
+        <FinalForm />
         <Route path="/start" component={Start} />
         <Route path="/howItWorks" component={HowItWorks} />
         <Route path="/about" component={About} />
