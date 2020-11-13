@@ -3,7 +3,7 @@ import "../howItWorks/howItWorks.scss";
 
 const HowItWorks = () => {
   return (
-    <section className="howitworks--section">
+    <section id="howItWorks" className="howitworks--section">
       <h1 className="howitworks--header">Wystarczą 4 proste kroki</h1>
       <div className="decoration"></div>
       <div className="box gray">

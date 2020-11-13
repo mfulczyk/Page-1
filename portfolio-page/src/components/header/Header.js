@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import { Link } from "react-scroll";
 import "../header/Header.scss";
 
@@ -19,19 +18,59 @@ function Header() {
       <nav>
         <ul className="header--nav secondary">
           <li>
-            <Link to="start">Start</Link>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="start"
+            >
+              Start
+            </Link>
           </li>
           <li>
-            <Link to="howItWorks">O co chodzi?</Link>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="howItWorks"
+            >
+              O co chodzi?
+            </Link>
           </li>
           <li>
-            <Link to="about">O nas</Link>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="about"
+            >
+              O nas
+            </Link>
           </li>
           <li>
-            <Link to="whoWorks">Fundacje i organizacje</Link>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="whoWorks"
+            >
+              Fundacje i organizacje
+            </Link>
           </li>
           <li>
-            <Link to="contact">Kontakt</Link>
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
+              to="finalForm"
+            >
+              Kontakt
+            </Link>
           </li>
         </ul>
       </nav>

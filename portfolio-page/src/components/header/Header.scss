@@ -18,6 +18,9 @@
       border: 0.75px solid $yellow;
     }
   }
+  li:nth-child(4) {
+    width: 210px;
+  }
 }
 
 a {
@@ -26,8 +29,4 @@ a {
   text-align: center;
   line-height: 45px;
   color: black;
-}
-
-ul > li:nth-child(4) {
-  width: 210px;
 }

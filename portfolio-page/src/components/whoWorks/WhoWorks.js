@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./whoworks.scss";
+import Pagination from "../testComp/Pagination";
 
 const WhoWorks = () => {
   const foundationsInfo = [
@@ -20,6 +21,36 @@ const WhoWorks = () => {
         "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
       what: "ubrania, jedzenie, ciepłe koce",
     },
+    {
+      name: `Fundacja “Lorem 4"`,
+      mission:
+        "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      what: "ubrania, jedzenie, ciepłe koce",
+    },
+    {
+      name: `Fundacja “Lorem 5"`,
+      mission:
+        "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      what: "ubrania, jedzenie, ciepłe koce",
+    },
+    {
+      name: `Fundacja “Lorem 6"`,
+      mission:
+        "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      what: "ubrania, jedzenie, ciepłe koce",
+    },
+    {
+      name: `Fundacja “Lorem 7"`,
+      mission:
+        "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      what: "ubrania, jedzenie, ciepłe koce",
+    },
+    {
+      name: `Fundacja “Lorem 8"`,
+      mission:
+        "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+      what: "ubrania, jedzenie, ciepłe koce",
+    },
   ];
 
   const organizationInfo = [
@@ -36,6 +67,16 @@ const WhoWorks = () => {
     },
     {
       name: `Organizacja "Lorem Ipsum 3"`,
+      mission: "Scelerisque in dictum non consectetur a erat nam.",
+      what: "Mi, quis, hendrerit, dolor",
+    },
+    {
+      name: `Organizacja "Lorem Ipsum 4"`,
+      mission: "Scelerisque in dictum non consectetur a erat nam.",
+      what: "Mi, quis, hendrerit, dolor",
+    },
+    {
+      name: `Organizacja "Lorem Ipsum 5"`,
       mission: "Scelerisque in dictum non consectetur a erat nam.",
       what: "Mi, quis, hendrerit, dolor",
     },
@@ -61,53 +102,30 @@ const WhoWorks = () => {
   ];
 
   const [display, setDisplay] = useState(foundationsInfo);
+  const [num, setNum] = useState(0);
 
   const changeDisplay = (event) => {
-    if (event.target.innerText === "Fundacjom") {
+    if (event.target.id === "1") {
       setDisplay(foundationsInfo);
     }
-    if (event.target.innerText === "Organizacjom pozarządowym") {
+    if (event.target.id === "2") {
       setDisplay(organizationInfo);
     }
-    if (event.target.innerText === "Lokalnym zbiórkom") {
+    if (event.target.id === "3") {
       setDisplay(localInfo);
     }
   };
-
   return (
-    <section className="whoworks--section">
+    <section id="whoWorks" className="whoworks--section">
       <h1 className="whoworks--header start--header">Komu pomagamy?</h1>
       <div className="decoration"></div>
-      <div className="whoworks-holder button--holder">
-        <button onClick={changeDisplay} className="btn whoworks-btn">
-          Fundacjom
-        </button>
-        <button
-          onClick={changeDisplay}
-          id="button1"
-          className="btn whoworks-btn"
-        >
-          Organizacjom pozarządowym
-        </button>
-        <button onClick={changeDisplay} className="btn whoworks-btn">
-          Lokalnym zbiórkom
-        </button>
-      </div>
-      <span className="whoworks-text start--text">
-        W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi
-        współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego
-        potrzebują.
-      </span>
-      <div className="ul--holder">
-        {display.map((el, index) => (
-          <ul className="whoWorks--ul" key={index}>
-            <li className="whoworks--name">{el.name}</li>
-            <li className="whoworks--what">{el.what}</li>
-            <li className="whoworks--mission">{el.mission}</li>
-            <div className="gray--line"></div>
-          </ul>
-        ))}
-      </div>
+      <Pagination
+        display={display}
+        changeDisplay={changeDisplay}
+        num={num}
+        setNum={setNum}
+        currPage={0}
+      />
     </section>
   );
 };

@@ -1,0 +1,69 @@
+.photo--holder {
+  background-image: url("../../assets/Background Image.png");
+  height: 1900px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  display: flex;
+}
+
+.photo--holder::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  background: #ffffffc9 0% 0% no-repeat padding-box;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.final--holder {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40%;
+  margin: 5px;
+  padding: 50px;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.placeholder {
+  display: block;
+  width: 50%;
+  height: 100px;
+}
+
+.form--basic {
+  border: none;
+  width: 80%;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+}
+form {
+  :focus {
+    outline: none;
+  }
+}
+
+.form--btn {
+  align-self: flex-end;
+  margin-right: 50px;
+  height: 60px;
+}
+
+.form--label {
+  align-self: flex-start;
+  padding-left: 76px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+::placeholder {
+  color: #3c3c3c26;
+  font-size: 14px;
+}

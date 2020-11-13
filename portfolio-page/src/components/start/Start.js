@@ -3,7 +3,7 @@ import "../start/Start.scss";
 
 const Start = () => {
   return (
-    <main>
+    <main id="start">
       <section className="start--section">
         <div className="start--pic" />
         {/* daj jako backgorund do calej sekji zeby nie ogarniczal komponentow przy zwijaniu strony */}

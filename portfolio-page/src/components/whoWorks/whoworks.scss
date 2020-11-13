@@ -34,7 +34,7 @@
   width: 100%;
 }
 
-ul:last-child {
+.whoWorks-ul:last-child {
   .gray--line {
     display: none;
   }
@@ -61,3 +61,49 @@ ul:last-child {
 .whoworks--what {
   align-self: flex-end;
 }
+
+.pagination--section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    display: flex;
+    color: $dark-gray;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 30px;
+    border: 1px solid $different-gray;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 5px;
+  }
+  :focus {
+    outline: none;
+  }
+  .next {
+    display: none;
+  }
+  .previous {
+    display: none;
+  }
+}
+
+.pagination__link--active {
+  font-weight: 700 !important;
+}
+
+// #whoWorks > section > ul.pagination > li:nth-child(2) {
+//   background-color: red !important;
+// }
