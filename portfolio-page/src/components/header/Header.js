@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import "../header/Header.scss";
+import { Link as LinkRouter } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,25 +9,26 @@ function Header() {
       <nav>
         <ul className="header--nav primary">
           <li>
-            <Link to="logScreen">Zaloguj</Link>
+            <LinkRouter to="logScreen">Zaloguj</LinkRouter>
           </li>
           <li>
-            <Link to="SignScreen">Załóż konto</Link>
+            <LinkRouter to="SignScreen">Załóż konto</LinkRouter>
           </li>
         </ul>
       </nav>
       <nav>
         <ul className="header--nav secondary">
           <li>
-            <Link
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              duration={500}
-              to="start"
-            >
+            <LinkRouter to="Home">
               Start
-            </Link>
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={500}
+                to="start"
+              ></Link>
+            </LinkRouter>
           </li>
           <li>
             <Link

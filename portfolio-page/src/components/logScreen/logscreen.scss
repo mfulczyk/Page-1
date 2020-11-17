@@ -1,0 +1,14 @@
+@import "../../scss/settings/_colors.scss";
+
+.section--log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.log--form {
+  background-color: $super-light-gray;
+  padding-top: 50px;
+  width: 25%;
+}
