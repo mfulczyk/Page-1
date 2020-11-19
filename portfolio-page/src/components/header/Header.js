@@ -20,14 +20,15 @@ function Header() {
         <ul className="header--nav secondary">
           <li>
             <LinkRouter to="Home">
-              Start
               <Link
                 activeClass="active"
                 spy={true}
                 smooth={true}
                 duration={500}
                 to="start"
-              ></Link>
+              >
+                Start
+              </Link>
             </LinkRouter>
           </li>
           <li>

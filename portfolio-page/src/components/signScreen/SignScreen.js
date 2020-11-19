@@ -11,6 +11,7 @@ const SignScreen = () => {
   });
   const [contentLog, setContentLog] = useState(false);
   const [contentPass, setContentPass] = useState(false);
+  const [contentPass2, setContentPass2] = useState(false);
   const [passCheck, setPassCheck] = useState(false);
 
   const changeHandlerEmail = (e) => {
@@ -27,7 +28,7 @@ const SignScreen = () => {
   const validationCheck = () => {
     let passCheck = logData;
     let emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(logData.email);
-    if (passCheck.password.length < 6) {
+    if (passCheck.password.length < 6 && passCheck.password.length > 0) {
       setContentPass(true);
     } else {
       setContentPass(false);
@@ -37,6 +38,20 @@ const SignScreen = () => {
     } else {
       setContentLog(true);
     }
+    if (
+      passCheck.password !== passCheck.password2 &&
+      passCheck.password2.length > 0
+    ) {
+      setPassCheck(true);
+    } else {
+      setPassCheck(false);
+    }
+    if (passCheck.password2.length < 6 && passCheck.password2.length > 0) {
+      setContentPass2(true);
+    } else {
+      setContentPass2(false);
+    }
+    console.log(passCheck);
   };
 
   return (
@@ -92,7 +107,7 @@ const SignScreen = () => {
             id="password"
             name="password-log"
           ></input>
-          {contentPass === true ? (
+          {contentPass2 === true ? (
             <p className="error--name">Podane hasło jest za krótkie!</p>
           ) : (
             ""
