@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import "../finalForm/finalForm.scss";
 
 const FinalForm = () => {
-  const [contentForm, setContentForm] = useState({
-    name: false,
-    email: false,
-    message: false,
-  });
+  const [contentName, setContentFormName] = useState(false);
+  const [contentEmail, setContentFormEmail] = useState(false);
+  const [contentMessage, setContentFormMessage] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,29 +15,37 @@ const FinalForm = () => {
   const validationCheck = (e) => {
     e.preventDefault();
     let emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email);
-    console.log(emailCheck);
 
     if (formData.name.length > 0) {
       let name = formData.name;
       let testArr = name.split(" ");
 
       if (testArr.length === 1) {
-        console.log("udało się!");
+        setContentFormName(false);
       } else {
-        setContentForm({ ...contentForm, email: true });
+        setContentFormName(true);
       }
     } else {
-      setContentForm({ name: false, email: false, message: false });
+      setContentFormName(false);
     }
 
     if (formData.email.length > 0) {
       if (emailCheck) {
-        setContentForm({ ...contentForm, email: false });
+        setContentFormEmail(false);
       } else {
-        setContentForm({ ...contentForm, email: true });
+        setContentFormEmail(true);
       }
     } else {
-      setContentForm({ name: false, email: false, message: false });
+      setContentFormEmail(false);
+    }
+    if (formData.message.length > 0) {
+      if (formData.message.length < 120) {
+        setContentFormMessage(true);
+      } else {
+        setContentFormMessage(false);
+      }
+    } else {
+      setContentFormMessage(false);
     }
   };
 
@@ -70,7 +77,7 @@ const FinalForm = () => {
             id="fname"
             name="fname"
           ></input>
-          {contentForm.name === true ? (
+          {contentName === true ? (
             <p className="error--name">Podane imię jest nieprawidłowe!</p>
           ) : (
             ""
@@ -87,7 +94,7 @@ const FinalForm = () => {
             id="lname"
             name="lname"
           ></input>
-          {contentForm.email === true ? (
+          {contentEmail === true ? (
             <p className="error--name">Podany email jest nieprawidłowy!</p>
           ) : (
             ""
@@ -103,7 +110,7 @@ const FinalForm = () => {
             id="message"
             name="lname"
           ></textarea>
-          {contentForm.message === true ? (
+          {contentMessage === true ? (
             <p className="error--name">
               Wiadomość musi mieć conajmniej 120 znaków!
             </p>
