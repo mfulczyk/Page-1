@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/home/static/css/main.49612c37.chunk.css",
-    "main.js": "/home/static/js/main.a611acfd.chunk.js",
-    "main.js.map": "/home/static/js/main.a611acfd.chunk.js.map",
-    "runtime-main.js": "/home/static/js/runtime-main.041ef417.js",
-    "runtime-main.js.map": "/home/static/js/runtime-main.041ef417.js.map",
-    "static/css/2.70c372c2.chunk.css": "/home/static/css/2.70c372c2.chunk.css",
-    "static/js/2.5809e973.chunk.js": "/home/static/js/2.5809e973.chunk.js",
-    "static/js/2.5809e973.chunk.js.map": "/home/static/js/2.5809e973.chunk.js.map",
-    "index.html": "/home/index.html",
-    "static/css/2.70c372c2.chunk.css.map": "/home/static/css/2.70c372c2.chunk.css.map",
-    "static/css/main.49612c37.chunk.css.map": "/home/static/css/main.49612c37.chunk.css.map",
-    "static/js/2.5809e973.chunk.js.LICENSE.txt": "/home/static/js/2.5809e973.chunk.js.LICENSE.txt",
-    "static/media/Start.scss": "/home/static/media/Decoration.1172adb4.svg",
-    "static/media/finalForm.scss": "/home/static/media/Background Image.dd60cf41.png",
-    "static/media/home.scss": "/home/static/media/Hero Image.1bee5467.png",
-    "static/media/about.scss": "/home/static/media/Signature.c2a96569.svg"
+    "main.css": "/static/css/main.dda66390.chunk.css",
+    "main.js": "/static/js/main.a611acfd.chunk.js",
+    "main.js.map": "/static/js/main.a611acfd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.84b53cd7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.84b53cd7.js.map",
+    "static/css/2.70c372c2.chunk.css": "/static/css/2.70c372c2.chunk.css",
+    "static/js/2.5809e973.chunk.js": "/static/js/2.5809e973.chunk.js",
+    "static/js/2.5809e973.chunk.js.map": "/static/js/2.5809e973.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.70c372c2.chunk.css.map": "/static/css/2.70c372c2.chunk.css.map",
+    "static/css/main.dda66390.chunk.css.map": "/static/css/main.dda66390.chunk.css.map",
+    "static/js/2.5809e973.chunk.js.LICENSE.txt": "/static/js/2.5809e973.chunk.js.LICENSE.txt",
+    "static/media/Start.scss": "/static/media/Decoration.1172adb4.svg",
+    "static/media/finalForm.scss": "/static/media/Background Image.dd60cf41.png",
+    "static/media/home.scss": "/static/media/Hero Image.1bee5467.png",
+    "static/media/about.scss": "/static/media/Signature.c2a96569.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.041ef417.js",
+    "static/js/runtime-main.84b53cd7.js",
     "static/css/2.70c372c2.chunk.css",
     "static/js/2.5809e973.chunk.js",
-    "static/css/main.49612c37.chunk.css",
+    "static/css/main.dda66390.chunk.css",
     "static/js/main.a611acfd.chunk.js"
   ]
 }
